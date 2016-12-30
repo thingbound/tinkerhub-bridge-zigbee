@@ -1,0 +1,28 @@
+{
+  "name": "tinkerhub-bridge-zigbee",
+  "version": "0.1.0",
+  "description": "Allow Zigbee devices to become Tinkerhub devices",
+  "repository": "tinkerhub/tinkerhub-bridge-zigbee",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "tinkerhub",
+    "tinkerhub-bridge",
+    "zigbee"
+  ],
+  "scripts": {
+    "prepublish": "node_modules/.bin/eslint lib",
+    "test": "node_modules/.bin/eslint lib"
+  },
+  "peerDependencies": {
+    "tinkerhub": "^1.0.0"
+  },
+  "dependencies": {
+    "q": "^1.4.1",
+    "zigbee-shepherd": "^0.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-plugin-node": "^3.0.5"
+  }
+}
